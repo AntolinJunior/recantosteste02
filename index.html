@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando DOM e Js</title>
+    <link rel="stylesheet" href="assets/estilos/style.css">
+    <link rel="stylesheet" href="assets/estilos/botao.css">
+    <link rel="stylesheet" href="assets/estilos/fundo.css">
+    <link rel="stylesheet" href="assets/estilos/variaveis.css">
+    <link rel="stylesheet" href="assets/estilos/cabecalho.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header-titulo">
+            
+            <h5>Recantos Hamburgueria & Pizzaria</h5>
+
+            <div>
+
+                <div>
+                    <a href="#"><img src="assets/image/home-icon.png" alt=""></a>
+                </div>
+
+                <p>voltar</p>
+
+            </div>
+
+        </div>
+
+    </header>
+
+        <div class="fundo-pizza">
+
+            <h2>2 queijos</h2>
+            <p>mussarela e catupiry</p>
+            <h3>R$42,90<del>R$47,00</del></h3>
+            <button class="adicionar-bag">Adicionar Item</button>
+           
+        </div>
+
+        <div class="fundo-pizza">
+
+            <h2>Pizza Frango Catupiry</h2>
+            <p>mussarela, frango desfiado e catupiry</p>
+            <h3>R$22,99 <del>R$25,90</del></h3>
+            <button class="adicionar-bag">Adicionar Item</button>
+           
+        </div>
+
+        <script>
+
+            const dentroDaBag = document.querySelector(".adicionar-bag")
+        
+                dentroDaBag.addEventListener("click", produtoNaBag)
+        
+            function produtoNaBag() {
+        
+                alert("Deu certo")
+            }
+        
+        
+        </script>
+
+</body>
+
+</html>
